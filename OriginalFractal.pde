@@ -14,6 +14,10 @@ public void fractal(float x, float y, float len)
 {
 	
 		ellipse(x, y, len, len);
+		fill(0);
+		rect(x,y, len, len/24);
+		rect(x, y, len /24, len);
+		fill(255);
 		rect(x, y, len/5.5, len/5.5);
 
 	if(len > 10)
@@ -35,6 +39,10 @@ public void rectFractal(float x, float y, float len)
 	ellipse(x + len/2, y + len/2, len/6, len/6);
 
 	rect(x, y, len, len);
+	fill(0);
+	ellipse(x,y, len, len/24);
+	ellipse(x, y, len/24, len);
+	fill(255);
 	ellipse(x, y, len/4.5, len/4.5);
 	if(len > 10)
 	{
